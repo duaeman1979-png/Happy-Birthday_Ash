@@ -131,4 +131,59 @@ button{
 button:hover{
     transform:translateY(-5px) scale(1.05);
     background:#ff2d92;
+    
+}
+
+/* =======================
+      Animated Stars
+======================= */
+
+.stars{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    pointer-events:none;
+}
+
+.stars span{
+    position:absolute;
+    width:4px;
+    height:4px;
+    background:white;
+    border-radius:50%;
+    box-shadow:0 0 10px white;
+    animation:twinkle 3s infinite ease-in-out;
+}
+
+.stars span:nth-child(1){top:5%;left:10%;}
+.stars span:nth-child(2){top:12%;left:35%;}
+.stars span:nth-child(3){top:18%;left:80%;}
+.stars span:nth-child(4){top:28%;left:60%;}
+.stars span:nth-child(5){top:35%;left:15%;}
+.stars span:nth-child(6){top:42%;left:90%;}
+.stars span:nth-child(7){top:50%;left:45%;}
+.stars span:nth-child(8){top:58%;left:5%;}
+.stars span:nth-child(9){top:65%;left:72%;}
+.stars span:nth-child(10){top:72%;left:30%;}
+.stars span:nth-child(11){top:80%;left:55%;}
+.stars span:nth-child(12){top:88%;left:88%;}
+.stars span:nth-child(13){top:25%;left:95%;}
+.stars span:nth-child(14){top:90%;left:15%;}
+.stars span:nth-child(15){top:10%;left:55%;}
+
+@keyframes twinkle{
+
+    0%,100%{
+        opacity:.2;
+        transform:scale(.7);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(2);
+    }
+
 }
