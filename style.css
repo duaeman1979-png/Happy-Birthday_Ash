@@ -5,25 +5,27 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1e0033, #4b0082, #ff69b4);
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg,#0f0c29,#302b63,#24243e);
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
 }
 
-.container {
-    text-align: center;
-    background: rgba(255,255,255,0.1);
-    padding: 50px;
-    border-radius: 25px;
-    backdrop-filter: blur(12px);
-    box-shadow: 0 0 35px rgba(255,255,255,0.3);
-    color: white;
+.container{
+    width:90%;
+    max-width:700px;
+    text-align:center;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(18px);
+    padding:60px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,.2);
+    box-shadow:0 0 50px rgba(255,105,180,.25);
+    color:white;
 }
-
 h1 {
     font-size: 50px;
     margin-bottom: 20px;
@@ -48,4 +50,43 @@ button {
 button:hover {
     transform: scale(1.1);
     background: #ff1e8a;
+}.welcome-text{
+    color:#ffd166;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:60px;
+    color:white;
+}
+
+h2{
+    font-size:42px;
+    color:#ff80bf;
+    margin-bottom:25px;
+}
+
+.message{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:35px;
+    color:#eeeeee;
+}
+
+button{
+    background:#ff4fa3;
+    color:white;
+    border:none;
+    padding:18px 45px;
+    border-radius:50px;
+    font-size:20px;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 0 20px rgba(255,79,163,.5);
+}
+
+button:hover{
+    transform:translateY(-5px) scale(1.05);
+    background:#ff2d92;
 }
